@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, footer{
+    background-color: lightpink;
+}
+main{
+    background-color: aliceblue;
+}
+nav{
+    background-color: bisque;
+}
+#page-wrapper{
+    margin: auto;
+    width: 80vw;
+}
+
+container{
+    display: flex;
+    text-align: center;
+}
+nav ul{
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+nav li{
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 80%;
+    margin: 5% auto;
+    padding: 2% ;
+}
+nav a{
+    text-decoration: none;
+    color: blue;
+    font-size: calc(2px + 2vw);
+}
+
+@media screen and (max-width: 1000px) {
+    #content{
+        flex-direction: column;
+    }
+}
