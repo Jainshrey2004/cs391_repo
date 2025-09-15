@@ -103,7 +103,7 @@ main li, main p{
         margin: 0;
     }
     nav a{
-        font-size: calc(2px + 0.5vw);
+        font-size: calc(2px + 2vw);
     }
     main{
         width: 100%;
