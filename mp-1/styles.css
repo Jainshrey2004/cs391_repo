@@ -85,7 +85,7 @@ main li, main p{
 }
 
 /* mobile device design */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 750px){
     main h2, header{
         text-align: center;
     }
@@ -96,13 +96,14 @@ main li, main p{
         width: 100%;
     }
     nav ul{
-        flex-direction: row;
+        flex-direction: row
+        ;
     }
     nav li{
         margin: 0;
     }
     nav a{
-        font-size: calc(16px);
+        font-size: calc(13px + 0.1vw);
     }
     main{
         width: 100%;
