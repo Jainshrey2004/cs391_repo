@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Projects | Shrey Jain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/mp-1/styles.css">
+</head>
+<body>
+  <div id="edge-wrapper">
+  <header>
+    <h1>Shrey Jain</h1>
+    <p>My Online Resume</p>
+  </header>
+
+  <div id="container">
+    <nav>
+      <ul>
+        <li><a href="/mp-1/index.html">Home</a></li>
+        <li><a href="/mp-1/sections/education.html">Education</a></li>
+        <li><a href="/mp-1/sections/experiences.html">Experiences</a></li>
+        <li><a href="/mp-1/sections/skills.html">Skills</a></li>
+        <li><a href="/mp-1/sections/projects.html">Projects</a></li>
+        <li><a href="/mp-1/sections/references.html">References</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Projects</h2>
+
+      <h3>Ticket Manager — Task Assignment System</h3>
+      <ul>
+        <li>Built a React/Node/Mongo tool to track incoming tickets and assignments.</li>
+        <li>Reduced tracking errors and improved turnaround by introducing a clear workflow.</li>
+      </ul>
+
+      <h3>Vision Crafter — AI-Powered Content Automation</h3>
+      <ul>
+        <li>Generated and curated marketing images with an OpenAI-powered pipeline.</li>
+        <li>Improved design workflow efficiency and page-load times using a CDN.</li>
+      </ul>
+
+      <h3>Calculator — Basic Arithmetic Operations</h3>
+      <div id="calc">
+      <h3 id="calc-title">Calculator</h3>
+      <p>Enter two numbers and choose an operation.</p>
+      <label for="one">Enter Number 1: </label><input type="text" id="one">
+      <label for="two">Enter Number 2: </label><input type="text" id="two">
+
+      <div id="calc-buttons">
+    <button onclick="doAdd()">+</button>
+    <button onclick="doSub()">-</button>
+    <button onclick="doMul()">*</button>
+    <button onclick="doDiv()">/</button>
+    <button onclick="doPow()">**</button>
+    <button onclick="doClear()">Clear</button>
+  </div>
+        <h3 id="output">Result</h3>
+
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>All Rights Reserved by Shrey Jain <a id="credit" href="/mp-1/sections/credits.html">Credits</a> &copy;</p>
+  </footer>
+
+  <script src="/mp-1/calc.js"></script>
+  </div>
+</body>
+</html>
