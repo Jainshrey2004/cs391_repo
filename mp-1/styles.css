@@ -17,7 +17,11 @@ body {
 
 header, footer{
     background: #1e3a8a;   
-    color: #ffffff;        
+    color: #ffffff;  
+          
+}
+header{
+  padding: 10px;
 }
 
 #container{
