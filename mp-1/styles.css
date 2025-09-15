@@ -86,7 +86,7 @@ main li, main p{
 
 /* mobile device design */
 @media screen and (max-width: 750px){
-    main h2{
+    main h2, header{
         text-align: center;
     }
     #container{
