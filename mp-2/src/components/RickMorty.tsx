@@ -32,7 +32,7 @@ const Data = styled.p`
 const Img = styled.img`
   width: 100%;
   border-radius: 8px;
-  border: 1px solid;
+  border: 1px solid #2de2e6;
 `;
 
 export default function RickAndMorty(props : { data:Character[] } ){

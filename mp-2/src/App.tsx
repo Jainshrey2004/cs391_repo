@@ -18,7 +18,7 @@ export default function App(){
             setData(results);
         }
         fetchData()
-            .then(() => console.log("Data fetched successfully"))
+            .then(() => console.log("Data Fetch : Success"))
             .catch((e: Error) => console.log("Error: " + e));
     }, [data.length]);
 
