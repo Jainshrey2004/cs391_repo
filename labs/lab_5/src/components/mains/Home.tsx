@@ -1,6 +1,7 @@
 export default function Home() {
     return (
         <main>
+            <title>Home | Resume</title>
             <h2>About Me</h2>
             {/*<img src="Shrey Profile.jpg" alt="Shrey Jain"/>*/}
             <p>

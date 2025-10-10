@@ -1,6 +1,7 @@
 export default function Experiences() {
     return (
         <main>
+            <title>Experiences | Resume</title>
             <h2>Experiences</h2>
 
             <h3>Dailoqa — Technical Product Manager Intern</h3>
