@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import shreyImg from "./Shrey Profile.jpg"
 
 const StyledMain = styled.main`
     main{
@@ -6,10 +7,12 @@ const StyledMain = styled.main`
         height: 100vh;
         width: 70%;
         padding: 1%;
+        @media screen and (max-width: 750px){
+            width: 100%}
     }`;
 
 const StyledImg = styled.img`
-    max-width: 40%;
+    max-width: 30%;
     height: auto;
     display: block;
     margin: 0 auto 20px auto;
@@ -30,7 +33,7 @@ export default function Home() {
         <StyledMain>
             <title>Home | Resume</title>
             <StyledH2>About Me</StyledH2>
-            <StyledImg src="/Shrey Profile.jpg" alt="Shrey Jain"/>
+            <StyledImg src={shreyImg} alt="Shrey Jain"/>
             <StyledP>
                 I’m a Computer Science student at Boston University passionate about building scalable products and
                 systems that solve real world problems. With hands on experience in product management and full stack

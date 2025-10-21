@@ -1,12 +1,9 @@
 import {Link} from "react-router";
 import styled from "styled-components";
 
-const StyledDiv = styled.div`
-    width: 30%;
-`;
-
 const StyledNav = styled.nav`
     background-color: #e5e7eb;
+    width: 30%;
     height: 100%;
     text-align: center;
 `;
@@ -40,7 +37,6 @@ const StyledLink = styled(Link)`
 
 export default function Nav(){
     return (
-        <StyledDiv>
         <StyledNav>
             <StyledUl>
                 <StyledList><StyledLink to={`/`}>Home</StyledLink></StyledList>
@@ -51,6 +47,5 @@ export default function Nav(){
                 <StyledList><StyledLink to={`/references`}>References</StyledLink></StyledList>
             </StyledUl>
         </StyledNav>
-        </StyledDiv>
     )
 }
