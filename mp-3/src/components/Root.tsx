@@ -8,12 +8,29 @@ import Skills from "./mains/Skills.tsx";
 import Projects from "./mains/Projects.tsx";
 import Education from "./mains/Education.tsx";
 import References from "./mains/References.tsx";
+import styled from "styled-components";
 
+const StyledWrapper = styled.div`
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #111827;
+`;
 
+const StyledContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+`;
 export default function Root(){
     return (
         <>
+            <StyledWrapper>
             <Header />
+                <StyledContainer>
             <Nav />
             <Routes>
                 <Route path={`/`} element={<Home/>}/>
@@ -23,7 +40,10 @@ export default function Root(){
                 <Route path={`/references`} element={<References/>}/>
                 <Route path={`/experiences`} element={<Experiences/>}/>
             </Routes>
-            <Footer />
+                </StyledContainer>
+                <Footer />
+                </StyledWrapper>
+
         </>
     )
 }
