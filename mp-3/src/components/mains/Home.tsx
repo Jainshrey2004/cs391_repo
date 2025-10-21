@@ -2,14 +2,13 @@ import styled from "styled-components";
 import shreyImg from "./Shrey Profile.jpg"
 
 const StyledMain = styled.main`
-    main{
         background-color: #f8fafc;
         height: 100vh;
         width: 70%;
         padding: 1%;
         @media screen and (max-width: 750px){
             width: 100%}
-    }`;
+    `;
 
 const StyledImg = styled.img`
     max-width: 30%;

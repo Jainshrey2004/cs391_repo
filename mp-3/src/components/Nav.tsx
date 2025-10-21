@@ -4,8 +4,10 @@ import styled from "styled-components";
 const StyledNav = styled.nav`
     background-color: #e5e7eb;
     width: 30%;
-    height: 100%;
     text-align: center;
+    @media screen and (max-width: 750px){
+        width: 100%;
+    }
 `;
 
 const StyledUl = styled.ul`
@@ -25,6 +27,8 @@ const StyledList = styled.li`
     width: 80%;
     padding: 2%;
     background: lightgrey;
+    @media screen and (max-width: 750px){
+        margin: 0;}
 `;
 
 const StyledLink = styled(Link)`
@@ -32,6 +36,9 @@ const StyledLink = styled(Link)`
     font-size: calc(2px + 1.5vw);
     font-weight: bold;
     color: #1e3a8a;
+    @media screen and (max-width: 750px){
+        font-size: calc(3px + 1.7vw)
+    }
 `;
 
 

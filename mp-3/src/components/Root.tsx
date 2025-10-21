@@ -17,6 +17,7 @@ const StyledWrapper = styled.div`
     font-family: Arial, sans-serif;
     background: #f5f7fb;
     color: #111827;
+    box-sizing: border-box;
 `;
 
 const StyledContainer = styled.div`

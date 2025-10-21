@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 const StyledMain = styled.main`
-    main{
         background-color: #f8fafc;
         height: 100vh;
         width: 70%;
         padding: 1%;
         @media screen and (max-width: 750px){
             width: 100%}
-    }`;
+    `;
 
 const StyledH2 = styled.h2`
     text-align: center;
