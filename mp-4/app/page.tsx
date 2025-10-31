@@ -9,14 +9,14 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  color: darkslateblue;
+  color: deeppink;
   margin-bottom: 20px;
 `;
 
 const Paragraph = styled.p`
   font-size: 16px;
   line-height: 1.6;
-  color: #555;
+  color: whitesmoke;
   margin-bottom: 15px;
 `;
 
