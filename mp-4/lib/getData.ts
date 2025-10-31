@@ -1,8 +1,34 @@
 "use server"
+import {WeatherData} from "@/types/WeatherData";
 
-const API_KEY = process.env.API_KEY;
 
-export default async function getData() {
-    const response = await fetch(`https://api.bigbookapi.com/search-books?api-key=${API_KEY}&query=books+about+wizards`);
-    return response.json();
+const apiKey = process.env.API_KEY;
+
+export async function getWeather(){
+
+    if (!apiKey) {
+        throw new Error("API key not configured");
+    }
+
+    try {
+        const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/boston?unitGroup=us&key=${apiKey}&contentType=json`;
+
+        const response = await fetch(url);
+
+        if (!response.ok) {
+            return null;
+        }
+
+        const data = await response.json();
+
+        return {
+            location: data.resolvedAddress,
+            temperature: data.currentConditions.temp,
+            conditions: data.currentConditions.conditions,
+            humidity: data.currentConditions.humidity,
+            windSpeed: data.currentConditions.windspeed,
+        };
+    } catch (error) {
+        return null;
+    }
 }

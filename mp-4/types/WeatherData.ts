@@ -1,5 +1,7 @@
 export type WeatherData = {
-    id: number;
-    title: string;
-    image: string;
+    location: string;
+    temperature: number;
+    conditions: string;
+    humidity: number;
+    windSpeed: number;
 }
