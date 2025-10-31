@@ -1,18 +1,12 @@
-import PostPreview from "@/components/PostPreview";
-export default function Home() {
+import PostsDisplay from "@/components/PostsDisplay"
+import getAllPosts from "@/lib/getAllPosts"
+
+
+export default async function Home() {
+  const posts = await getAllPosts();
   return (
-    <div>
-        <PostPreview
-            post={
-                {
-                    id:"id",
-                    title:"Post Title",
-                    content:"bhcdscb",
-                    upvotes:5,
-                    downvotes:5
-                }
-            }
-        />
+    <div className="flex flex-col items-center bg-black-200 p-4">
+      <PostsDisplay inputPosts={posts} />
     </div>
   )
 }
