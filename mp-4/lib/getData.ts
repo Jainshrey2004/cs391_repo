@@ -12,14 +12,17 @@ export async function getWeather(){
 
     try {
         const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/boston?unitGroup=us&key=${apiKey}&contentType=json`;
-
+        // console.log(url);
         const response = await fetch(url);
+        // console.log("Response", response);
 
         if (!response.ok) {
             return null;
         }
 
         const data = await response.json();
+        // console.log(data);
+        // console.log(data.currentConditions.windspeed);
 
         return {
             location: data.resolvedAddress,
