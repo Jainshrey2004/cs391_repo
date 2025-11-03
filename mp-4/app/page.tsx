@@ -11,6 +11,7 @@ const Container = styled.div`
 const Title = styled.h1`
   color: deeppink;
   margin-bottom: 20px;
+    font-weight: bold;
 `;
 
 const Paragraph = styled.p`
