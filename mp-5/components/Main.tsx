@@ -151,7 +151,7 @@ export default function Main() {
 
             const result = await createUrl(inputValue, inputAlias);
 
-            setShortUrl(`http://localhost:3000/${result.alias}`);
+            setShortUrl(`https://cs391-repo-mp5.vercel.app/${result.alias}`);
 
         } catch (err: any) {
             alert("Alias already exists, please choose another alias.");
@@ -183,7 +183,7 @@ export default function Main() {
 
                 <StyledDiv3>
                     <StyledP>
-                        http://localhost:3000/
+                        https://cs391-repo-mp5.vercel.app/
                     </StyledP>
                     <StyledInput2
                         type="text"
